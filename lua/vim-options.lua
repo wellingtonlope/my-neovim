@@ -7,18 +7,18 @@ vim.g.mapleader = " "
 vim.opt.clipboard = "unnamedplus"
 
 -- Windows WSL
-vim.g.clipboard = {
-  name = "win32yank-wsl",
-  copy = {
-    ["+"] = "win32yank.exe -i --crlf",
-    ["*"] = "win32yank.exe -i --crlf",
-  },
-  paste = {
-    ["+"] = "win32yank.exe -o --crlf",
-    ["*"] = "win32yank.exe -o --crlf",
-  },
-  cache_enable = 0,
-}
+-- vim.g.clipboard = {
+--   name = "win32yank-wsl",
+--   copy = {
+--     ["+"] = "win32yank.exe -i --crlf",
+--     ["*"] = "win32yank.exe -i --crlf",
+--   },
+--   paste = {
+--     ["+"] = "win32yank.exe -o --crlf",
+--     ["*"] = "win32yank.exe -o --crlf",
+--   },
+--   cache_enable = 0,
+-- }
 
 vim.keymap.set("n", "<leader>\\", ":nohlsearch<CR>", {})
 vim.keymap.set("n", "<leader>s", ":w<CR>", {})
